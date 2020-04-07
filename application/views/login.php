@@ -35,10 +35,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <div class="card card-signin my-5">
                     <div class="card-body">
                         <h5 class="card-title text-center">Sign in</h5>
-                        <form action="#" method="POST" class="from-signin">
+                        <p class="text-danger text-center"><?= $this->session->flashdata('pesan');
+                                                            ?></p>
+                        <form action="<?= base_url('auth/login') ?>" method="POST" class="from-signin">
                             <div class="form-group">
                                 <label for="username">Username</label>
-                                <input id="username" class="form-control" type="email" name="username" placeholder="Username" required>
+                                <input id="username" class="form-control" type="text" name="username" placeholder="Username" required>
                             </div>
                             <div class="form-group">
                                 <label for="password">Password</label>

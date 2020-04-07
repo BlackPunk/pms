@@ -178,11 +178,11 @@ class Migration_Add_table extends CI_Migration
                                 'constraint' => 11,
                                 'auto_increment' => TRUE
                         ),
-                        'user_name' => array(
+                        'username' => array(
                                 'type' => 'VARCHAR',
                                 'constraint' => 50,
                         ),
-                        'doctor_name' => array(
+                        'nama' => array(
                                 'type' => 'VARCHAR',
                                 'constraint' => 50,
                         ),
@@ -203,11 +203,11 @@ class Migration_Add_table extends CI_Migration
                 $this->dbforge->create_table('users');
 
                 $data = array(
-                        'user_name' => 'admin',
+                        'username' => 'admin',
                         'doctor_name' => 'Dr Pow',
                         'email' => 'fertyokta@gmail.com',
                         'no_hp' => '082233445566',
-                        'password' => password_hash('admin', PASSWORD_BCRYPT)
+                        'password' => 'admin'
                 );
                 $this->db->insert('users', $data);
         }
