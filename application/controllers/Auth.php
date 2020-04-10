@@ -10,13 +10,29 @@ class Auth extends CI_Controller
         // inisialisasi model
         $this->load->model('m_user');
     }
+
+    public function index()
+    {
+        // melakukan migrasi database
+        $this->load->library('migration');
+        if ($this->migration->current() === FALSE) {
+            show_error($this->migration->error_string());
+        }
+
+        $data['title'] = 'Sistem manajemen pasien';
+        $this->load->view('template/header', $data);
+        $this->load->view('login', $data);
+        $this->load->view('template/footer');
+    }
+
     public function login()
     {
-        $user = $this->input->post('username');
-        $pass = $this->input->post('password');
+        $username = $this->input->post('username');
+        $password = $this->input->post('password');
 
         // pengecekan data login
-        if ($this->m_user->dataLogin($user, $pass)) {
+        $user = $this->m_user->get_user($username, $password);
+        if (count($user) > 0) {
             die("Sukses");
         } else {
             $this->session->set_flashdata('pesan', 'Username/Password salah !');

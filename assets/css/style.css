@@ -1,3 +1,77 @@
+/* Umum */
+body {
+	background: #f5f5f5;
+	font-family: "Source Sans Pro", sans-serif;
+	margin: 0;
+	overflow-x: hidden; }
+  
+
+/* Custom bootstrap */
+.bg-primary {background-color: #67a8e4 !important; }
+  
+.bg-success {background-color: #4ac18e !important; }
+
+.bg-info {background-color: #3bc3e9 !important; }
+
+.bg-warning {background-color: #ffbb44 !important; }
+
+.bg-danger {background-color: #ea553d !important; }
+
+.bg-muted {background-color: #707070 !important; }
+
+.bg-white {background-color: #ffffff !important; }
+
+.bg-dark {background-color: #1d1e3a !important; }
+
+.bg-pink {background-color: #f06292; }
+
+.bg-purple {background-color: #6d60b0; }
+
+.bg-indigo {background-color: #5468da; }
+
+.bg-teal {background-color: #009688; }
+
+.bg-lime {background-color: #afb42b; }
+
+.bg-orange {background-color: #fb8c00; }
+
+.bg-brown {background-color: #8d6e63; }
+
+.bg-blue-grey {background-color: #90a4ae; }
+
+.text-white {color: #ffffff; }
+	
+.text-danger {color: #ea553d !important; }
+
+.text-muted {color: #707070 !important; }
+
+.text-primary {color: #67a8e4 !important; }
+
+.text-warning {color: #ffbb44 !important; }
+
+.text-success {color: #4ac18e !important; }
+
+.text-info {color: #3bc3e9 !important; }
+
+.text-dark {color: #1d1e3a !important; }
+
+.text-pink {color: #f06292; }
+
+.text-purple {color: #6d60b0; }
+
+.text-indigo {color: #5468da; }
+
+.text-teal {color: #009688; }
+
+.text-lime {color: #afb42b; }
+
+.text-orange {color: #fb8c00; }
+
+.text-brown {color: #8d6e63; }
+
+.text-blue-grey {	color: #90a4ae; }
+  
+
 /* Halaman Login */
 .login-bg{
 	background-image: url('../images/bg.jpg');
@@ -12,6 +86,51 @@
 	border-radius: 1rem;
 	box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
   }
+
+/* Topbar */
+.navbar{
+	background-color: #e3f2fd;
+}
+ .navbar .nav-item{
+	 width: 150px;
+	}
+ .navbar .nav-item:hover{
+	 background-color: #C9E9FF;
+ }
+
+/* Dashboard */
+.mini-stat {
+	border: 1px solid rgba(112, 112, 112, 0.12);
+	padding: 20px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin-bottom: 20px; }
+  
+.mini-stat-icon {
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	line-height: 60px;
+	text-align: center;
+	font-size: 30px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	float: left;
+	margin-right: 10px;
+	color: #ffffff; }
+  
+.mini-stat-info {
+	font-size: 14px;
+	padding-top: 2px; }
+  
+.mini-stat-info span {
+	display: block;
+	font-size: 22px;
+	font-weight: 400;
+	font-family: "Roboto", sans-serif; }
+
 /* ==============
   Loader
 ===================*/
