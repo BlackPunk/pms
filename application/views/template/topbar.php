@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-    <a class=" navbar-brand ml-md-4" href="#"><i class="fad fa-clinic-medical"></i></a>
+    <a class=" navbar-brand ml-md-4" href="<?= base_url('dashboard') ?>"><i class="fad fa-clinic-medical"></i></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -7,16 +7,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-md-auto ml-md-auto text-md-center px-md-3">
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fab fa-bandcamp"></i> Dashboard</a>
+                <a class="nav-link" href="<?= base_url('dashboard') ?>"><i class="fab fa-bandcamp"></i> Dashboard</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fal fa-calendar-check"></i> Janji Temu</a>
+                <a class="nav-link" href="#"><i class="fal fa-calendar-check"></i> Appointment</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fal fa-mortar-pestle"></i> Resep</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fal fa-file-invoice-dollar"></i> Kwitansi</a>
+                <a class="nav-link" href="#"><i class="fal fa-file-invoice-dollar"></i> Tagihan</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fal fa-user-injured"></i> Pasien</a>
