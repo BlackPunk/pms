@@ -10,16 +10,16 @@
                 <a class="nav-link" href="<?= base_url('dashboard') ?>"><i class="fab fa-bandcamp"></i> Dashboard</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fal fa-calendar-check"></i> Appointment</a>
+                <a class="nav-link" href="<?= base_url('dashboard/appointment') ?>"><i class="fal fa-calendar-check"></i> Appointment</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fal fa-mortar-pestle"></i> Resep</a>
+                <a class="nav-link" href="<?= base_url('dashboard/resep') ?>"><i class="fal fa-mortar-pestle"></i> Resep</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fal fa-file-invoice-dollar"></i> Tagihan</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fal fa-user-injured"></i> Pasien</a>
+                <a class="nav-link" href="<?= base_url('dashboard/pasien') ?>"><i class="fal fa-user-injured"></i> Pasien</a>
             </li>
         </ul>
     </div>
