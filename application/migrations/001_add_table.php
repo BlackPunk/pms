@@ -22,7 +22,7 @@ class Migration_Add_table extends CI_Migration
                                 'type' => 'DATE',
                                 'null' => TRUE,
                         ),
-                        'waktu' => array(
+                        'jam' => array(
                                 'type' => 'VARCHAR',
                                 'constraint' => 20,
                         ),
@@ -30,7 +30,7 @@ class Migration_Add_table extends CI_Migration
                 $this->dbforge->add_key('id_appointment', TRUE);
                 $this->dbforge->create_table('appointment');
 
-                /***** Tabel Invoice *****/
+                /***** Tabel Tagihan *****/
                 $this->dbforge->add_field(array(
                         'id_tagihan' => array(
                                 'type' => 'INT',
@@ -47,9 +47,9 @@ class Migration_Add_table extends CI_Migration
                         ),
                         'status_pembayaran' => array(
                                 'type' => 'VARCHAR',
-                                'constraint' => 10,
+                                'constraint' => 15,
                         ),
-                        'judul_tagihan' => array(
+                        'deskripsi_tagihan' => array(
                                 'type' => 'VARCHAR',
                                 'constraint' => 100,
                         ),
@@ -57,7 +57,7 @@ class Migration_Add_table extends CI_Migration
                                 'type' => 'VARCHAR',
                                 'constraint' => 100,
                         ),
-                        'tanggal_tagihan' => array(
+                        'tanggal_invoice' => array(
                                 'type' => 'VARCHAR',
                                 'constraint' => 100,
                         ),
@@ -81,14 +81,14 @@ class Migration_Add_table extends CI_Migration
                                 'constraint' => 11,
                         ),
                         'j_kelamin' => array(
-                                'type' => 'INT',
-                                'constraint' => 11,
+                                'type' => 'VARCHAR',
+                                'constraint' => 15,
                         ),
                         'no_hp' => array(
                                 'type' => 'VARCHAR',
                                 'constraint' => 15,
                         ),
-                        'add' => array(
+                        'alamat' => array(
                                 'type' => 'VARCHAR',
                                 'constraint' => 50,
                         ),
@@ -112,7 +112,7 @@ class Migration_Add_table extends CI_Migration
                                 'type' => 'INT',
                                 'constraint' => 11,
                         ),
-                        'pernafasan' => array(
+                        'pernapasan' => array(
                                 'type' => 'INT',
                                 'constraint' => 11,
                         ),
@@ -155,14 +155,6 @@ class Migration_Add_table extends CI_Migration
                                 'type' => 'VARCHAR',
                                 'constraint' => 100,
                         ),
-                        'test' => array(
-                                'type' => 'VARCHAR',
-                                'constraint' => 100,
-                        ),
-                        't_note' => array(
-                                'type' => 'VARCHAR',
-                                'constraint' => 100,
-                        ),
                         'tanggal' => array(
                                 'type' => 'VARCHAR',
                                 'constraint' => 100,
@@ -201,15 +193,6 @@ class Migration_Add_table extends CI_Migration
                 ));
                 $this->dbforge->add_key('id_user', TRUE);
                 $this->dbforge->create_table('users');
-
-                $data = array(
-                        'username' => 'admin',
-                        'nama' => 'Dr Pow',
-                        'email' => 'email@gmail.com',
-                        'no_hp' => '082233445566',
-                        'password' => 'admin'
-                );
-                $this->db->insert('users', $data);
         }
 
         public function down()
